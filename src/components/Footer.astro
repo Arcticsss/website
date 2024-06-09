@@ -1,0 +1,31 @@
+---
+import GitHub from "./social-icons/GitHub.astro"; 
+import Discord from "./social-icons/Discord.astro"; 
+import Roblox from "./social-icons/Roblox.astro"; 
+
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"div">
+---
+
+<footer {...Astro.props}>
+  <div class="mb-4 flex space-x-3">
+    <a aria-label="GitHub" target="_blank" rel="noreferrer noopener" class="text-neutral-400 hover:text-white" href="http://github.pcoiscript.xyz">
+      <GitHub />
+    </a>
+    <a aria-label="Discord" class="text-neutral-400 hover:text-white" target="_blank" href="http://discord.pcoiscript.xyz">
+      <Discord />
+    </a>
+    <a aria-label="Roblox" class="text-neutral-400 hover:text-white" target="_blank" href="http://roblox.pcoiscript.xyz">
+      <Roblox />
+    </a>
+  </div>
+
+  <p class="text-neutral-400 mb-1">
+    © {new Date().getFullYear()} <span class="text-white font-medium">Pcoi94</span>, All rights reserved.
+  </p>
+
+  <p class="text-neutral-400">
+    licensed under the Apache License 2.0.
+  </p>
+</footer>
