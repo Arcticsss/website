@@ -5,9 +5,9 @@ export async function GET() {
   const posts = await getCollection("blog");
 
   return rss({
-    title: "lukadev's blog",
-    description: "my thoughts on software development.",
-    site: "https://lukadev.me/",
+    title: "arctic's blog",
+    description: "my thoughts on roblox development",
+    site: "https://arcticcsss.xyz/",
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.date,

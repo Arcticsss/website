@@ -1,24 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import RootLayout from "../layouts/RootLayout.astro";
+import { NotFoundTypewriter } from "../components/NotFoundTypewriter";
 ---
 
-<RootLayout
-  title="Not Found - Pcoi94"
-  description="This page does not exist"
+<Layout
+  title="page not found - arctic"
+  description="This page was not found!"
+  class="-mt-8 flex flex-col justify-center py-16 lg:-mx-16 lg:flex-row lg:items-center lg:justify-between"
 >
-  <Layout class="flex-grow flex items-center">
-    <div class="w-full">
-      <h1 class="mb-4">
-        <span class="text-xl tracking-wide font-bold text-blue-400 block">
-          404
-        </span>
-        <span class="text-3xl sm:text-5xl font-medium block">Page Not Found</span>
-      </h1>
-
-      <p class="max-w-xs text-xl text-neutral-400">
-        The page you were looking for does not exist.
-      </p>
-    </div>
-  </Layout>
-</RootLayout>
+  <div>
+    <h1 class="mb-2 text-2xl font-bold text-[#FF0000]">ERROR 404!</h1>
+    <h1 class="mb-2 text-5xl font-bold">Page not found</h1>
+    <p class="mb-4 text-zinc-400">the page you are looking for doesn't exist</p>
+    <p>
+      <a
+        href="/"
+        class="font-medium text-light underline decoration-zinc-400 underline-offset-4 hover:decoration-light"
+      >
+        home
+      </a>
+    </p>
+  </div>
+</Layout>

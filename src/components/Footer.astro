@@ -1,31 +1,42 @@
 ---
-import GitHub from "./social-icons/GitHub.astro"; 
-import Discord from "./social-icons/Discord.astro"; 
-import Roblox from "./social-icons/Roblox.astro"; 
-
-import type { HTMLAttributes } from "astro/types";
-
-type Props = HTMLAttributes<"div">
+import X from "./social-icons/X.astro";
+import GitHub from "./social-icons/GitHub.astro";
+import Mastodon from "./social-icons/Mastodon.astro";
 ---
 
-<footer {...Astro.props}>
-  <div class="mb-4 flex space-x-3">
-    <a aria-label="GitHub" target="_blank" rel="noreferrer noopener" class="text-neutral-400 hover:text-white" href="http://github.pcoiscript.xyz">
+<footer class="border-t border-t-zinc-800 py-12 text-sm">
+  <div class="mb-6 flex space-x-3">
+    <a
+      aria-label="X"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="text-zinc-400 hover:text-light"
+      href="https://x.com/arcrticc"
+    >
+      <X />
+    </a>
+    <a
+      aria-label="GitHub"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="text-zinc-400 hover:text-light"
+      href="https://github.com/Arcticsss"
+    >
       <GitHub />
     </a>
-    <a aria-label="Discord" class="text-neutral-400 hover:text-white" target="_blank" href="http://discord.pcoiscript.xyz">
-      <Discord />
-    </a>
-    <a aria-label="Roblox" class="text-neutral-400 hover:text-white" target="_blank" href="http://roblox.pcoiscript.xyz">
-      <Roblox />
+    <a
+      aria-label="Roblox"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="text-zinc-400 hover:text-light"
+      href="https://www.roblox.com/users/523719419/profile"
+    >
+      <Mastodon />
     </a>
   </div>
 
-  <p class="text-neutral-400 mb-1">
-    © {new Date().getFullYear()} <span class="text-white font-medium">Pcoi94</span>, All rights reserved.
-  </p>
-
-  <p class="text-neutral-400">
-    licensed under the Apache License 2.0.
+  <p class="mb-1 text-zinc-400">
+    copyright {new Date().getFullYear()} arctic, licensed under the Apache License
+    2.0
   </p>
 </footer>
